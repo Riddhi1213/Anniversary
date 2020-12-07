@@ -4,11 +4,30 @@
 	<title>Happy Anniversary</title>
 	<link rel="stylesheet" href="styles.css">
 	<script type="text/javascript">
+		function checkpass(){
+                console.log("clickedddd!!!!");
+ 		var pass= document.getElementById("myPsw").value;
+                if(pass=="07121975"){
+                document.getElementById("passdiv").style.display = "none";}
+		else{
+		alert("Wrong password!!");}
+}
+		
 	</script>
 </head>
 <body>
 <center>
-	
+	<div id="passdiv" style="transition:all 2s ease-in-out;z-index:100;position: absolute; background-color:#00002e; width:100%; height:100%; color:white;font-size:2em; padding-top:100px;"><center>Hello Vrushik, Please enter the password:
+	<br> <br><input type="password" id="myPsw" name="psw" title="enter password" style="padding: 20px 20px;border-radius: 50px;border: 5px solid darkred;color:purple ;font-size:1em;"><br><br>
+ 	<button type="button" onclick="checkpass()" style="background-color: #4CAF50;border-radius: 10px; /* Green */
+  	border: none;
+  	color: white;
+  	padding: 20px 42px;
+  	text-align: center;
+ 	text-decoration: none;
+  	display: inline-block;
+  	font-size: 1em;">Submit</button>
+</center></div>
 	
 		
 	<div class="card" style="transform: rotate(90deg);" ><!---->
